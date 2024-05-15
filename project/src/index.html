@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>TailwindCSS</title>
+</head>
+<body>
+    <header>
+        <div id="main-header" class="bg-orange-500">
+            <div class="header-content max-w-5xl m-auto p-6 flex flex-wrap justify-around items-center gap-8 text-white md:justify-between md:flex-nowrap">
+                <!-- logo -->
+                <div class="font-bold text-2xl flex gap-1 items-center">
+                    <i class="ph-bold ph-circle text-5xl"></i>
+                    <h1>YOUR LOGO</h1>
+                </div>
+                <!-- navigation -->
+                <nav class="order-1 md:order-none">
+                    <ul class="font-semibold flex gap-6 sm:gap-10">
+                        <li><a href="#" class="hover:opacity-70">HOME</a></li>
+                        <li><a href="#" class="hover:opacity-70">ABOUT</a></li>
+                        <li><a href="#" class="hover:opacity-70">SERVICES</a></li>
+                        <li><a href="#" class="hover:opacity-70">CONTACT</a></li>
+                    </ul>
+                </nav>        
+                
+                <!-- social media links -->
+                <div class="social-media flex gap-3">
+                    <a href="https://facebook.com/" target="_blank"><i class="ph-fill ph-facebook-logo text-2xl"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="ph-fill ph-twitter-logo text-2xl"></i></a>
+                </div>
+            </div>
+            
+            <!-- masthead -->
+            <div id="masthead" class="bg-zinc-200">
+                <div class="masthead-content max-w-5xl h-6 m-auto px-6 text-orange-500">
+                    HOME/
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="my-5 max-w-5xl mx-auto px-6">
+            <div class="section-content p-7 bg-cyan-500 flex flex-col">
+                <div class="section-inner-content max-h-full flex items-center relative">
+                    <div id="left-arrow-section" class="section-left-arrow w-max h-max text-4xl cursor-pointer text-white bg-orange-500 absolute -left-10 rounded-s-md">
+                        <i class="ph ph-arrow-left"></i>
+                    </div>
+
+                    <div class="content-wrapper max-h-full flex flex-col gap-4 md:flex-row">
+                        <div class="content-left pl-8 text-white md:w-1/2">
+                            <h1 class="text-3xl drop-shadow-md font-semibold mb-6">Main Heading Example</h1>
+                            <p class="text-sm drop-shadow-sm mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo officiis ducimus quod deserunt quos veritatis rerum ipsam. Nobis, maiores laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed asperiores consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, beatae.</p>
+                            <a href="#" class="hover:underline w-max font-semibold">Read More</a>
+                        </div> 
+                        <div class="content-right">
+                            <img src="images/cloud.png" alt="section image" class="w-full h-full object-contain drop-shadow-md">
+                        </div>
+                    </div>
+
+                    <div id="right-arrow-section" class="section-right-arrow w-max h-max text-4xl cursor-pointer text-white bg-orange-500 absolute -right-10 rounded-e-md">
+                        <i class="ph ph-arrow-right"></i>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="section-footer h-5 flex justify-center gap-2 items-center bg-gray-200">
+                <div id="mark1" class="section-mark w-12 h-1 rounded bg-orange-400"></div>
+                <div id="mark2" class="section-mark w-12 h-1 rounded bg-gray-400"></div>
+                <div id="mark3" class="section-mark w-12 h-1 rounded bg-gray-400"></div>
+            </div> 
+        </section>
+
+        <section class="my-6 px-6 bg-gray-200">
+            <div class="section-content max-w-5xl m-auto py-8 text-center grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="py-3 px-4 bg-gray-100 shadow-md relative">
+                    <i class="ph-fill ph-folders text-orange-500 text-6xl"></i>
+                    <div class="article-title mb-2 text-lg font-semibold text-cyan-400 uppercase">
+                        title 1
+                    </div>
+                    <p class="text-xs text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem sed fuga maxime modi maiores dignissimos dolor veniam error aperiam?</p>
+                    <div class="article-button w-max py-2 px-5 text-white text-sm bg-cyan-500 absolute -bottom-4 left-1/2 -translate-x-1/2">
+                        <a href="#">Read more</a>
+                    </div>
+                </article>
+
+                <article class="py-3 px-4 bg-gray-100 shadow-md relative">
+                    <i class="ph-fill ph-map-pin-area text-orange-500 text-6xl"></i>
+                    <div class="article-title mb-2 text-lg font-semibold text-cyan-400 uppercase">
+                        title 2
+                    </div>
+                    <p class="text-xs text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis velit nam sequi deleniti omnis nobis reiciendis.</p>
+                    <div class="article-button w-max py-2 px-5 text-white text-sm bg-cyan-500 absolute -bottom-4 left-1/2 -translate-x-1/2">
+                        <a href="#">Read more</a>
+                    </div>
+                </article>
+
+                <article class="py-3 px-4 bg-gray-100 shadow-md relative">
+                    <i class="ph-fill ph-cloud-arrow-up text-orange-500 text-6xl"></i>
+                    <div class="article-title mb-2 text-lg font-semibold text-cyan-400 uppercase">
+                        title 3
+                    </div>
+                    <p class="text-xs text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio nisi adipisci incidunt consequuntur aliquam at, laborum architecto eius corrupti quo aut!</p>
+                    <div class="article-button w-max py-2 px-5 text-white text-sm bg-cyan-500 absolute -bottom-4 left-1/2 -translate-x-1/2">
+                        <a href="#">Read more</a>
+                    </div>
+                </article>
+
+                <article class="py-3 px-4 bg-gray-100 shadow-md relative">
+                    <i class="ph-fill ph-building text-orange-500 text-6xl"></i>
+                    <div class="article-title mb-2 text-lg font-semibold text-cyan-400 uppercase">
+                        title 4
+                    </div>
+                    <p class="text-xs text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi at temporibus.</p>
+                    <div class="article-button w-max py-2 px-5 text-white text-sm bg-cyan-500 absolute -bottom-4 left-1/2 -translate-x-1/2">
+                        <a href="#">Read more</a>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div id="main-footer" class="bg-orange-500">
+            <div class="footer-content max-w-5xl m-auto p-6 text-yellow-50 flex justify-between gap-2">
+                <div class="footer-media">
+                    <h2 class="font-semibold mb-2 text-sm">&RightTriangle; Social Media</h2>
+                    <div class="sm-footer-wrapper opacity-90 text-xs flex flex-col gap-1 md:flex-row md:gap-2 md:text-base">
+                        <a href="https://facebook.com/" target="_blank" class="hover:opacity-70"><i class="ph-fill ph-facebook-logo text-2xl"></i></a>
+                        <a href="https://instagram.com/" target="_blank" class="hover:opacity-70"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="hover:opacity-70"><i class="ph-fill ph-twitter-logo text-2xl"></i></a>
+                    </div>                    
+                </div>
+                <div class="footer-nav">
+                    <h2 class="font-semibold mb-2 text-sm">&RightTriangle; Navigation</h2>
+                    <div class="nav-footer-wrapper opacity-90 text-xs flex flex-col gap-1 md:flex-row md:gap-4 md:text-base">
+                        <a href="#" class="hover:underline">Home</a>
+                        <a href="#" class="hover:underline">About</a>
+                        <a href="#" class="hover:underline">Services</a>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <h2 class="font-semibold mb-2 text-sm">&RightTriangle; Contact</h2>
+                    <div class="contact-footer-wrapper opacity-90 text-xs flex flex-col gap-1 md:text-base">
+                        <p>+4472 0000 0000</p>
+                        <p>0800 000 0000</p>
+                        <p>info@mycompany.com</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="sub-footer" class="bg-gray-200">
+            <div class="footer-content max-w-5xl m-auto py-2 px-6 text-center text-xs text-gray-400 flex flex-col gap-1 lg:flex-row lg:justify-center lg:gap-8">
+                <p>The Company Webhouse Ltd.</p>
+                <p>Registered Company Number: 123456</p>
+                <p>Registered Address: 2nd Floor, 42 Broomfield Road, Chelmsford, Essex, CM1 1SY</p>
+            </div>            
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
